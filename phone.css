@@ -1,0 +1,409 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+th,
+td {
+  padding: 2px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  position: relative;
+  width: 350px;
+  height: 85%;
+  border: 5px solid black;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#toggle {
+  position: absolute;
+  background-color: black;
+  width: 10px;
+  height: 60px;
+  border-radius: 5px;
+  right: -8px;
+  top: 160px;
+  border: none;
+}
+
+#top {
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  right: 34%;
+  border-radius: 0 0 15px 15px;
+  z-index: 30;
+}
+
+
+
+#homeScreen,
+#wallpaper,
+#password,
+#iphonePage,
+#callPage,
+#rechargeCard,
+#displayBalance {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 10;
+}
+#homeScreen{
+  z-index: 31;
+}
+
+#wallpaper,
+#password,
+#iphonePage,
+#callPage,
+#rechargeCard,
+#displayBalance {
+  background: url("IMG_5442.webp") no-repeat;
+  z-index: 9;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#password {
+  z-index: 8;
+}
+
+#iphonePage {
+  z-index: 7;
+}
+
+#callPage {
+  background-image: none;
+  background-color: black;
+}
+
+#rechargeCard,
+#displayBalance {
+  background: none;
+  z-index: -1;
+  overflow-y: scroll;
+  background-color: yellow;
+}
+
+#rechargeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+}
+
+#displayBalance {
+  overflow: none;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+
+
+}
+
+#showingBal{
+  font-size: 15px;
+ width: 70%;
+ height: 18%;
+ display: flex;
+ text-align: center;
+ flex-direction: column;
+ align-items: center;
+ background-color: rgb(71, 71, 71);
+ border-radius: 5px;
+ color: white;
+}
+
+#showingBal button{
+  width: fit-content;
+  padding: 2px 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#things {
+  margin-top: 400px;
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#things button {
+  border: none;
+  background-color: rgba(240, 248, 255, 0.001);
+  color: white;
+}
+
+#tools {
+  border-radius: 50%;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.207);
+}
+
+#buttons,
+#buttonss {
+  width: 85%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#buttons button,
+#buttonss button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+#buttonss button {
+  width: 73px;
+  height: 73px;
+  margin-bottom: 7px;
+}
+
+#text {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  color: white;
+  font-weight: 600;
+}
+
+#passwordInput {
+  margin-bottom: 30px;
+}
+
+#lastButtons {
+  margin-top: 40px;
+  width: 70%;
+  font-size: 14px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#lButton {
+  color: white;
+  background-color: rgba(240, 255, 255, 0.018);
+  border: none;
+}
+
+#passwordInput,
+#callInput {
+  background-color: rgba(0, 255, 255, 0);
+  color: white;
+  border: none;
+  width: 15%;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+#callInput {
+  background-color: rgba(255, 0, 0, 0);
+  width: 55%;
+  letter-spacing: normal;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  height: 84%;
+  background-color: rgba(137, 43, 226, 0);
+  border-radius: 20px;
+  z-index: 7;
+}
+#fixedpart,
+#fixedButtons {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 14%;
+  background-color: rgba(255, 255, 255, 0.254);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#fixedpart button {
+  width: 22%;
+  height: 70%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#bu {
+  margin-bottom: 10px;
+}
+
+#phone {
+  width: 100%;
+  height: 550px;
+  background-color: rgba(255, 192, 203, 0);
+  border-radius: 20px;
+  z-index: 7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#phone button {
+  width: 20%;
+  height: 70px;
+  margin: 0 3px;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#phone #but {
+  margin-top: 36px;
+  background-color: rgba(240, 255, 255, 0);
+}
+
+#fixedButtons {
+  height: 9%;
+  width: 97%;
+  background-color: black;
+}
+
+#fixedButtons button {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+}
+#bunt {
+  background-color: black;
+  border: none;
+}
+
+#buttonGreen,
+#buttonDelete {
+  background-color: #65ce67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+#buttonDelete {
+  background-color: rgba(240, 248, 255, 0);
+}
+
+#fixedButtons small {
+  font-size: 8px;
+  color: whitesmoke;
+}
+
+#backPage {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+#container #signal,
+#container #signalStrength,
+#container #battery {
+  position: absolute;
+  top: 0;
+  right: 75px;
+  z-index: 30;
+}
+
+#container #signalStrength {
+  right: 50px;
+}
+
+#container #battery {
+  right: 20px;
+}
+#marquee {
+  position: absolute;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  top: 0;
+  left: 10px;
+  z-index: 30;
+  color: white;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+#marquee p {
+  margin-top: 2px;
+  animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+table input , table button{
+  outline: none;
+  width: fit-content;
+  border: none;
+  background-color: rgba(250, 235, 215, 0);
+}
+
+
+

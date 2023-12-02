@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="phone.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+  </head>
+  <body>
+    <div id="container">
+      <button id="toggle" onclick="onPhone()"></button>
+      <span id="top"> </span>
+      <div id="marquee"><p>MTN-Stay Safe</p></div>
+
+      <iconify-icon
+        id="signal"
+        icon="system-uicons:signal-full"
+        style="color: white"
+        width="25"
+      ></iconify-icon>
+      <iconify-icon
+        id="signalStrength"
+        icon="tabler:signal-5g"
+        style="color: white"
+        width="29"
+      ></iconify-icon>
+      <iconify-icon
+        id="battery"
+        icon="fluent:battery-2-24-regular"
+        style="color: white"
+        width="29"
+      ></iconify-icon>
+
+      <div id="homeScreen" ondblclick="onPhone()"></div>
+
+      <div id="wallpaper">
+        <p id="datestring" style="color: white; margin-top: 50px"></p>
+        <h1
+          id="time"
+          style="
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-weight: 900;
+            text-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.509);
+          "
+        ></h1>
+        <iconify-icon
+          icon="icomoon-free:lock"
+          style="color: white"
+          width="16"
+        ></iconify-icon>
+
+        <div id="things">
+          <p id="tools">
+            <iconify-icon
+              icon="bxs:torch"
+              style="color: white"
+              width="16"
+            ></iconify-icon>
+          </p>
+          <button id="bu" onclick="openPhone()" style="font-size: 14px">
+            Click Here To Unlock
+          </button>
+          <p id="tools">
+            <iconify-icon
+              icon="bi:camera-fill"
+              style="color: white"
+              width="16"
+            ></iconify-icon>
+          </p>
+        </div>
+      </div>
+
+      <div id="password">
+        <p id="text" style="text-align: center">
+          Swipe up for Face ID of <br />
+          Enter Password
+        </p>
+        <input type="password" id="passwordInput" />
+
+        <div id="buttons">
+          <button class="button" onclick="addNum(1)" value="1">1</button>
+          <button class="button" onclick="addNum(2)" value="2">2</button>
+          <button class="button" onclick="addNum(3)" value="3">3</button>
+          <button class="button" onclick="addNum(4)" value="4">4</button>
+          <button class="button" onclick="addNum(5)" value="5">5</button>
+          <button class="button" onclick="addNum(6)" value="6">6</button>
+          <button class="button" onclick="addNum(7)" value="7">7</button>
+          <button class="button" onclick="addNum(8)" value="8">8</button>
+          <button class="button" onclick="addNum(9)" value="9">9</button>
+          <button class="button" onclick="addNum(0)" value="0">0</button>
+        </div>
+
+        <p id="lastButtons">
+          <button id="lButton">Emergency</button>
+          <button id="lButton" onclick="deleteItem()">Cancel</button>
+        </p>
+      </div>
+
+      <div id="iphonePage">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="phone">
+                <button id="but">
+                  <img
+                    style="width: 56px; height: 56px"
+                    src="app-store.png"
+                    alt=""
+                  />
+                </button>
+                <button id="but">
+                  <img
+                    style="width: 56px; height: 56px"
+                    src="calculator.png"
+                    alt=""
+                  />
+                </button>
+                <button id="but">
+                  <img
+                    style="width: 56px; height: 56px"
+                    src="camera (1).png"
+                    alt=""
+                  />
+                </button>
+                <button id="but">
+                  <img
+                    style="width: 56px; height: 56px"
+                    src="files.png"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img
+                    src="my-shortcuts.png"
+                    style="width: 56px; height: 56px"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img
+                    style="width: 56px; height: 56px"
+                    src="facetime.png"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img
+                    style="width: 56px; height: 56px"
+                    src="find-my.png"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img
+                    style="width: 56px; height: 56px"
+                    src="clock (1).png"
+                    alt=""
+                  />
+                </button>
+                <button onclick="showRechargeApp()">
+                  <img
+                    style="width: 56px; height: 56px"
+                    src="news (1).png"
+                    alt=""
+                  />
+                </button>
+                <button></button> <button></button> <button></button>
+                <button></button> <button></button> <button></button>
+                <button></button> <button></button> <button></button>
+                <button></button> <button></button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="phone"></div>
+            </div>
+            <div class="carousel-item">
+              <div id="phone"></div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div id="fixedpart">
+          <button onclick="showCallPage()">
+            <img src="apple-phone (1).png" alt="" />
+          </button>
+          <button>
+            <img
+              src="safari (1).png"
+              alt=""
+              style="width: 56px; height: 56px"
+            />
+          </button>
+          <button>
+            <img
+              src="ios-message (1).png"
+              alt=""
+              style="width: 56px; height: 56px"
+            />
+          </button>
+          <button>
+            <img
+              src="apple-music (1).png"
+              alt=""
+              style="width: 56px; height: 56px"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div id="callPage">
+        <input type="text" id="callInput" style="font-size:21px" />
+
+        <button id="backPage" onclick="backPage()">
+          <iconify-icon
+            icon="dashicons:arrow-left-alt2"
+            style="color: whitesmoke"
+            width="20"
+          ></iconify-icon>
+        </button>
+
+        <div id="buttonss">
+          <button class="butto" onclick="addCallNum(1)" value="1">1</button>
+          <button class="butto" onclick="addCallNum(2)" value="2">2</button>
+          <button class="butto" onclick="addCallNum(3)" value="3">3</button>
+          <button class="butto" onclick="addCallNum(4)" value="4">4</button>
+          <button class="butto" onclick="addCallNum(5)" value="5">5</button>
+          <button class="butto" onclick="addCallNum(6)" value="6">6</button>
+          <button class="butto" onclick="addCallNum(7)" value="7">7</button>
+          <button class="butto" onclick="addCallNum(8)" value="8">8</button>
+          <button class="butto" onclick="addCallNum(9)" value="9">9</button>
+          <button class="butto" onclick="addCallNum('*')" value="*">*</button>
+          <button class="butto" onclick="addCallNum(0)" value="0">0</button>
+          <button class="butto" onclick="addCallNum('#')" value="#">#</button>
+          <button id="bunt" onclick=""></button>
+          <button id="buttonGreen" onclick="CallNum()">
+            <iconify-icon
+              icon="fluent:call-28-filled"
+              style="color: white"
+              width="35"
+            ></iconify-icon>
+          </button>
+          <button id="buttonDelete" onclick="callDeleteNum()">
+            <iconify-icon
+              icon="icon-park-solid:delete-key"
+              style="color: #626262"
+              width="30"
+            ></iconify-icon>
+          </button>
+        </div>
+
+        <div id="fixedButtons">
+          <button>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: whitesmoke"
+              width="25"
+            ></iconify-icon>
+            <small style="margin-top: 2px"> Favourites</small>
+          </button>
+          <button>
+            <iconify-icon
+              icon="uim:clock"
+              style="color: whitesmoke"
+              width="27"
+            ></iconify-icon>
+            <small style="margin-top: 2px">Recents</small>
+          </button>
+          <button>
+            <iconify-icon
+              icon="iconamoon:profile-circle-fill"
+              style="color: whitesmoke"
+              width="27"
+            ></iconify-icon>
+            <small style="margin-top: 2px">Contacts</small>
+          </button>
+          <button>
+            <iconify-icon
+              icon="eva:keypad-fill"
+              style="color: #1778f2; margin-top: 6px"
+              width="25"
+            ></iconify-icon>
+            <small style="margin-top: 2px; color: #1778f2">Keypad</small>
+          </button>
+          <button>
+            <iconify-icon
+              icon="ic:baseline-voicemail"
+              style="color: whitesmoke"
+              width="30"
+            ></iconify-icon>
+            <small>Voicemail</small>
+          </button>
+        </div>
+      </div>
+
+      <div id="rechargeCard">
+
+        <button id="backPage" onclick="backPage()">
+          <iconify-icon
+            icon="dashicons:arrow-left-alt2"
+            style="color: black"
+            width="20"
+          ></iconify-icon>
+        </button>
+  
+ 
+            <div style="margin-top: 60px; margin-bottom: 30px;">
+              <label class="d-block" for="">Select a Provider</label>
+              <select class="form-select" name="" id="provider">
+                <option value="">Select a Provider</option>
+                <option value="MTN">MTNN</option>
+                <option value="Airtel">Airtel</option>
+                <option value="Airtel">9mobile</option>
+                <option value="Airtel">Glo</option>
+              </select>
+              <small id="smalltext"> </small>
+            </div>
+
+            <div  style="margin-bottom: 30px;" >
+              <label class="d-block" for="">Select Price</label>
+              <select class="form-select" name="" id="amount">
+                <option value="">Price</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+              </select>
+            </div>
+     
+          <button style="margin-bottom: 30px;" onclick="genAirtime()" class="btn btn-dark">
+            Generate Airtime
+          </button>
+       
+
+      
+      
+          <table id="table" style="font-size: 12px;">
+            <thead id="thead">
+              <th>Pin</th>
+              <th>Status</th>
+              <th>Provider</th>
+              <th>Amount</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        
+      </div>
+      <div id="displayBalance">
+        <section id="showingBal">
+          <p style="margin-top: 15px;"> Recharge Successful! , Your Balance is: <span id="balMTN"> </span> </p>
+           <button onclick="remove()"> Ok </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="phone.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
