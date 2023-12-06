@@ -58,7 +58,7 @@ body {
 #iphonePage,
 #callPage,
 #rechargeCard,
-#displayBalance {
+#displayBalance , #alarmPage{
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -75,7 +75,7 @@ body {
 #iphonePage,
 #callPage,
 #rechargeCard,
-#displayBalance {
+#displayBalance , #alarmPage {
   background: url("IMG_5442.webp") no-repeat;
   z-index: 9;
   background-size: cover;
@@ -102,7 +102,7 @@ body {
   background: none;
   z-index: -1;
   overflow-y: scroll;
-  background-color: yellow;
+  background-color: #fecb09;
 }
 
 #rechargeCard {
@@ -405,5 +405,32 @@ table input , table button{
   background-color: rgba(250, 235, 215, 0);
 }
 
+#alarmPage{
+  z-index: -1;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("be9411d45537eccdbb2f0cd81df43117.jpg");
 
+}
+
+#alarmPage input{
+  background-color: #65ce6700;
+  border: 1px solid grey;
+  width: 130px;
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#alarmPage button{
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 2px;
+}
 
