@@ -144,7 +144,7 @@
                     alt=""
                   />
                 </button>
-                <button id="but">
+                <button id="but" onclick="openCam()">
                   <img
                     style="width: 56px; height: 56px"
                     src="camera (1).png"
@@ -179,7 +179,7 @@
                     alt=""
                   />
                 </button>
-                <button onclick="(showAlarmApp())">
+                <button onclick="showAlarmApp()">
                   <img
                     style="width: 56px; height: 56px"
                     src="clock (1).png"
@@ -193,7 +193,14 @@
                     alt=""
                   />
                 </button>
-                <button></button> <button></button> <button></button>
+                <button onclick="showPictures()">
+                  <img
+                  style="width: 56px; height: 56px"
+                  src="photos.png"
+                  alt=""
+                />
+                  
+                </button> <button></button> <button></button>
                 <button></button> <button></button> <button></button>
                 <button></button> <button></button> <button></button>
                 <button></button> <button></button>
@@ -244,7 +251,7 @@
               style="width: 56px; height: 56px"
             />
           </button>
-          <button>
+          <button onclick="showMusic()">
             <img
               src="apple-music (1).png"
               alt=""
@@ -342,6 +349,7 @@
       <div id="rechargeCard">
 
         <button id="backPage" onclick="backPage()">
+
           <iconify-icon
             icon="dashicons:arrow-left-alt2"
             style="color: black"
@@ -391,6 +399,7 @@
           </table>
         
       </div>
+
       <div id="displayBalance">
         <section id="showingBal">
           <p style="margin-top: 15px;"> Recharge Successful! , Your Balance is: <span id="balMTN"> </span> </p>
@@ -399,15 +408,73 @@
       </div>
 
       <div id="alarmPage">
-        <!-- <button id="backPage"  onclick="backPage()"> -->
+       <button id="backPage" onclick="backPage()">
+          
+          <iconify-icon
+            icon="dashicons:arrow-left-alt2"
+            style="color: black"
+            width="20"
+          ></iconify-icon>
+        </button>
        
   
-        <h1 class="mt-5" id="timee"></h1>
+        <h1 class="mt-5" id="timee"> </h1>
         <input type="time" id="timeInput" />
-       <button id="buttonne" onclick="setAlarm()">Set alarm</button> 
+       <button id="buttonne" style="background-color: black;" onclick="setAlarm()">Set alarm</button> 
         
         <p id="alarm"></p>
    
+
+      </div>
+
+      <div id="videoPage">
+        <button id="backPage" style="z-index: 200;" onclick="backPage()">
+          
+          <iconify-icon
+            icon="dashicons:arrow-left-alt2"
+            style="color: white"
+            width="20"
+          ></iconify-icon>
+        </button>
+       
+        <video autoplay src="" id="vid" ></video>
+      
+        <div id="vidbuts"> 
+
+       <button id="canvasButton" onclick="showPictures()">  <canvas width="60" height="60" id="canvas" style="border-radius: 5px;"> </canvas> </button>  
+        
+          <button id="takePix" onclick="takePix()"> Take </button>
+
+          <button id="startCam" onclick="startCam()"> StartCam </button>
+        </div>
+        
+      
+
+      </div>
+
+      <div id="displayPictures">
+        <button style="top: 55px;" id="backPage" onclick="backPage()">
+          
+          <iconify-icon
+            icon="dashicons:arrow-left-alt2"
+            style="color: white"
+            width="20"
+          ></iconify-icon>
+        </button>
+        <div id="forPics">
+     
+
+        </div>
+
+
+
+      </div>
+
+
+      <div id="musicPage">
+      
+
+
 
       </div>
     </div>
@@ -416,3 +483,4 @@
 <script src="phone.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+

@@ -58,7 +58,7 @@ body {
 #iphonePage,
 #callPage,
 #rechargeCard,
-#displayBalance , #alarmPage{
+#displayBalance , #alarmPage , #videoPage , #displayPictures , #musicPage{
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -75,7 +75,7 @@ body {
 #iphonePage,
 #callPage,
 #rechargeCard,
-#displayBalance , #alarmPage {
+#displayBalance , #alarmPage  , #videoPage , #displayPictures , #musicPage{
   background: url("IMG_5442.webp") no-repeat;
   z-index: 9;
   background-size: cover;
@@ -429,8 +429,141 @@ table input , table button{
 
 #alarmPage button{
   border-radius: 10px;
-  background-color: black;
   color: white;
   padding: 2px;
 }
 
+#videoPage{
+  z-index: -1;
+  background-image: none;
+  background-color: black;
+
+}
+
+#vid{
+  position: absolute;
+  top: 35px;
+  width: 340px;
+  height: 520px;
+object-fit: cover;
+background-color:black;
+}
+
+#vidbuts{
+width: 95%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 20px;
+}
+
+#startCam{
+  background-color: #65ce6700;
+  color: #65ce6700;
+  border: none;
+}
+
+#takePix{
+  color: #65ce6700;
+  background-color: white;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.673);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#canvasButton{
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  background-color: #65ce6700;
+}
+
+#displayPictures{
+  z-index: -1;
+  background-image: none;
+  background-color: black;
+}
+
+#forPics{
+  overflow-x: none;
+  overflow-y: scroll;
+  display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ height: 90%;
+background-color: whitesmoke;
+
+margin-top: 40px;
+justify-content: space-around;
+
+}
+
+#forPics img{
+  border: 1px solid grey;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+#musicPage{
+  z-index: -1;
+  overflow-y: scroll;
+  overflow-x: none;
+  background: none;
+  background-color: palevioletred;
+ 
+
+
+}
+
+
+#div{
+  position: relative;
+  height: 500px;
+  width: 350px;
+  background-color: rgba(37, 36, 36, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+
+}
+
+
+#div button{
+background-color: rgba(240, 248, 255, 0);
+border: none;
+}
+
+#songsArray button{
+display: flex;
+align-items: center;
+justify-content: start;
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(8,7,16,0.6);
+background-color: rgba(240, 255, 255, 0.485);
+}
+
+
+#controls{
+width: 80%;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+#speedControl{
+width: 20px;
+border: none;
+outline: none;
+background-color: rgba(240, 248, 255, 0);
+}
+
+#songButton0{
+  margin-top: 70px;
+}
