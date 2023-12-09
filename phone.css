@@ -509,12 +509,12 @@ justify-content: space-around;
 
 #musicPage{
   z-index: -1;
-  overflow-y: scroll;
-  overflow-x: none;
-  background: none;
-  background-color: palevioletred;
- 
+display: flex;
+flex-direction: column;
+align-items: center;
 
+  background: none;
+  background-color: rgb(28, 28, 28);
 
 }
 
@@ -532,6 +532,13 @@ justify-content: space-around;
 
 }
 
+#songsArray{
+
+  height: 92%;
+  overflow-y: scroll;
+  overflow-x: none; 
+
+}
 
 #div button{
 background-color: rgba(240, 248, 255, 0);
@@ -545,7 +552,7 @@ justify-content: start;
 backdrop-filter: blur(10px);
 border: 2px solid rgba(255,255,255,0.1);
 box-shadow: 0 0 40px rgba(8,7,16,0.6);
-background-color: rgba(240, 255, 255, 0.485);
+background-color: rgba(240, 255, 255, 0.133);
 }
 
 
