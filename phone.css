@@ -58,7 +58,7 @@ body {
 #iphonePage,
 #callPage,
 #rechargeCard,
-#displayBalance , #alarmPage , #videoPage , #displayPictures , #musicPage{
+#displayBalance , #alarmPage , #videoPage , #displayPictures , #musicPage , #contactsPage{
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -75,7 +75,7 @@ body {
 #iphonePage,
 #callPage,
 #rechargeCard,
-#displayBalance , #alarmPage  , #videoPage , #displayPictures , #musicPage{
+#displayBalance , #alarmPage  , #videoPage , #displayPictures , #musicPage , #contactsPage{
   background: url("IMG_5442.webp") no-repeat;
   z-index: 9;
   background-size: cover;
@@ -347,7 +347,7 @@ body {
   color: whitesmoke;
 }
 
-#backPage {
+#backPage , #backPagee {
   position: absolute;
   top: 40px;
   left: 10px;
@@ -574,3 +574,44 @@ background-color: rgba(240, 248, 255, 0);
 #songButton0{
   margin-top: 70px;
 }
+
+#contactsPage{
+  z-index: -1;
+  background: none;
+  background-color: black;
+}
+
+#contacts-div{
+  width: 100%;
+  height: 89%;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
+
+#forContactList{
+  width: 100%;
+  height: 300px;
+  overflow-x: none;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+#myFile{
+position: relative;
+  background-color: rgba(250, 235, 215, 0);
+  color: rgba(240, 248, 255, 0);
+ border-radius: 100%;
+  width: 100%;
+  height: 100px;
+
+  left: 90px;
+ top: 10px;
+z-index: 5;
+ opacity: 0;
+ }
+

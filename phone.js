@@ -8,10 +8,6 @@ let text = document.getElementById("text");
 let callPage = document.getElementById("callPage");
 let buttonDelete = document.getElementById("buttonDelete");
 
-
-
-
-
 localStorage.setItem("password", "8950");
 
 homeScreen.style.visibility = "visible";
@@ -25,9 +21,10 @@ function onPhone() {
   callPage.style.zIndex = -1;
   rechargeCard.style.zIndex = -1;
   alarmPage.style.zIndex = -1;
-  videoPage.style.zIndex = -1
-  displayPictures.style.zIndex = -1
-  musicPage.style.zIndex = -1
+  videoPage.style.zIndex = -1;
+  displayPictures.style.zIndex = -1;
+  musicPage.style.zIndex = -1;
+  contactsPage.style.zIndex = -1;
 }
 
 function makeTime() {
@@ -123,14 +120,16 @@ callPage.style.zIndex = -1;
 
 function showCallPage() {
   callPage.style.zIndex = 20;
+  contactsPage.style.zIndex = -1;
 }
 
 function backPage() {
   callPage.style.zIndex = -1;
   rechargeCard.style.zIndex = -1;
   alarmPage.style.zIndex = -1;
-  videoPage.style.zIndex = -1
-  displayPictures.style.zIndex = -1
-  musicPage.style.zIndex = -1
+  videoPage.style.zIndex = -1;
+  displayPictures.style.zIndex = -1;
+  musicPage.style.zIndex = -1;
+  contactsPage.style.zIndex = -1;
 }
 
